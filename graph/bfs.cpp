@@ -1,10 +1,3 @@
-#pragma once
-
-#ifndef call_from_test
-#include <bits/stdc++.h>
-using namespace std;
-#endif
-//BEGIN CUT HERE
 vector<int> bfs(int s,vector< vector<int> > G){
   int n=G.size();
   vector<int> dp(n,-1);
@@ -21,10 +14,3 @@ vector<int> bfs(int s,vector< vector<int> > G){
   }
   return dp;
 }
-//END CUT HERE
-#ifndef call_from_test
-//INSERT ABOVE HERE
-signed main(){
-  return 0;
-}
-#endif
