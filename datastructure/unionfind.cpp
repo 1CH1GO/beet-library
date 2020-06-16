@@ -1,8 +1,3 @@
-#ifndef call_from_test
-#include<bits/stdc++.h>
-using namespace std;
-#endif
-//BEGIN CUT HERE
 struct UnionFind{
   int num;
   vector<int> rs,ps;
@@ -29,10 +24,4 @@ struct UnionFind{
     return num;
   }
 };
-//END CUT HERE
-#ifndef call_from_test
-//INSERT ABOVE HERE
-signed main(){
-  return 0;
-}
-#endif
+
