@@ -1,3 +1,16 @@
+ 
+#pragma once
+
+#ifndef call_from_test
+#include <bits/stdc++.h>
+using namespace std;
+
+#define call_from_test
+#include "enumeration.cpp"
+#undef call_from_test
+
+#endif
+//BEGIN CUT HERE
 // put n distinct balls into at most k identical boxes
 template<typename M>
 M bell(int n,int k){
@@ -17,4 +30,9 @@ M bell(int n,int k){
     res+=M(i).pow(n)*E::Finv(i)*dp[k-i];
   return res;
 }
-
+//END CUT HERE
+#ifndef call_from_test
+signed main(){
+  return 0;
+}
+#endif
